@@ -26,7 +26,7 @@ public class ItemCarrinho {
     public ItemCarrinho(Produto Produto, Double Quantidade, Double totalProdutos) {
         this.Produto = Produto;
         this.Quantidade = Quantidade;
-        this.totalProdutos = totalProdutos;
+        this.totalProdutos = totalProdutos * Quantidade;
     }
     
     public Produto getProduto() {

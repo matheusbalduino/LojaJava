@@ -15,4 +15,63 @@ public class Produto {
     private double Preco;
     private Categoria Categoria;
     private boolean Delivery;
+    private Fornecedor fornecedor;
+
+    public Produto(String Nome, String Descricao, double Preco, Categoria Categoria, boolean Delivery, Fornecedor fornecedor) {
+        this.Nome = Nome;
+        this.Descricao = Descricao;
+        this.Preco = Preco;
+        this.Categoria = Categoria;
+        this.Delivery = Delivery;
+        this.fornecedor = fornecedor;
+    }
+
+    public String getNome() {
+        return Nome;
+    }
+
+    public void setNome(String Nome) {
+        this.Nome = Nome;
+    }
+
+    public String getDescricao() {
+        return Descricao;
+    }
+
+    public void setDescricao(String Descricao) {
+        this.Descricao = Descricao;
+    }
+
+    public double getPreco() {
+        return Preco;
+    }
+
+    public void setPreco(double Preco) {
+        this.Preco = Preco;
+    }
+
+    public Categoria getCategoria() {
+        return Categoria;
+    }
+
+    public void setCategoria(Categoria Categoria) {
+        this.Categoria = Categoria;
+    }
+
+    public boolean isDelivery() {
+        return Delivery;
+    }
+
+    public void setDelivery(boolean Delivery) {
+        this.Delivery = Delivery;
+    }
+    
+    public Fornecedor getFornecedor() {
+        return fornecedor;
+    }
+
+    public void setFornecedor(Fornecedor fornecedor) {
+        this.fornecedor = fornecedor;
+    }
+    
 }

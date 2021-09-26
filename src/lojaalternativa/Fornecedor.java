@@ -12,27 +12,32 @@ import java.util.ArrayList;
  * @author Matheus
  */
 public class Fornecedor extends Pessoa {
+    private int Id;
     private String razaoSocial;
     private String inscricaoEstadual;
     private ArrayList<Produto> Produtos;
     
-    public Fornecedor(String Nome, String Email, String DataNasc, String Cpf, String Sexo){
-        super(Nome, Email, DataNasc, Cpf, Sexo);
+    public Fornecedor(int id, String Nome, String Email, String DataNasc, String Cpf, String Sexo, Endereco endereco){
+        super(Nome, Email, DataNasc, Cpf, Sexo, endereco);
+        this.Id = id;
     }
-    public Fornecedor(String Nome, String Email, String DataNasc, String Cpf, String Sexo, String razaoSocial){
-        super(Nome, Email, DataNasc, Cpf, Sexo);
+    public Fornecedor(int id, String Nome, String Email, String DataNasc, String Cpf, String Sexo, String razaoSocial, Endereco endereco){
+        super(Nome, Email, DataNasc, Cpf, Sexo, endereco);
         this.razaoSocial = razaoSocial;
+        this.Id = id;
     }
-    public Fornecedor(String Nome, String Email, String DataNasc, String Cpf, String Sexo, String razaoSocial, String inscricaoEstadual){
-        super(Nome, Email, DataNasc, Cpf, Sexo);
+    public Fornecedor(int id, String Nome, String Email, String DataNasc, String Cpf, String Sexo, String razaoSocial, String inscricaoEstadual, Endereco endereco){
+        super(Nome, Email, DataNasc, Cpf, Sexo, endereco);
         this.razaoSocial = razaoSocial;
         this.inscricaoEstadual = inscricaoEstadual;
+        this.Id = id;
     }
-    public Fornecedor(String Nome, String Email, String DataNasc, String Cpf, String Sexo, String razaoSocial, String inscricaoEstadual, ArrayList<Produto> Produtos){
-        super(Nome, Email, DataNasc, Cpf, Sexo);
+    public Fornecedor(int id, String Nome, String Email, String DataNasc, String Cpf, String Sexo, String razaoSocial, String inscricaoEstadual, ArrayList<Produto> Produtos, Endereco endereco){
+        super(Nome, Email, DataNasc, Cpf, Sexo, endereco);
         this.razaoSocial = razaoSocial;
         this.inscricaoEstadual = inscricaoEstadual;
         this.Produtos = Produtos;
+        this.Id = id;
     }
 
     public String getRazaoSocial() {

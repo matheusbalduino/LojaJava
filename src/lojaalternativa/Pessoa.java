@@ -15,6 +15,7 @@ public abstract class Pessoa {
     private String DataNasc;
     private String Cpf;
     private String Sexo;
+    private Endereco endereco;
     
      public Pessoa(String Nome){
         this.Nome = Nome;
@@ -41,19 +42,20 @@ public abstract class Pessoa {
         
     }
     
-    public Pessoa(String Nome, String Email, String DataNasc, String Cpf, String Sexo){
+    public Pessoa(String Nome, String Email, String DataNasc, String Cpf, String Sexo, Endereco endereco){
         this.Nome = Nome;
         this.Email = Email;
         this.DataNasc = DataNasc;
         this.Cpf = Cpf;
         this.Sexo = Sexo;
+        this.endereco = endereco;
     }
-    
-    public String getNome(){
+
+    public String getNome() {
         return Nome;
     }
-    
-    public void setNome(String Nome){
+
+    public void setNome(String Nome) {
         this.Nome = Nome;
     }
 
@@ -88,6 +90,13 @@ public abstract class Pessoa {
     public void setSexo(String Sexo) {
         this.Sexo = Sexo;
     }
-    
+
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
     
 }
